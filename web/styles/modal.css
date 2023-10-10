@@ -130,7 +130,7 @@
     }
 }
 
-.modal__btn:focus,
+.modal__btn:focus-visible,
 .modal__btn:hover {
     transform: scale(1.05);
 }
@@ -234,7 +234,7 @@
             }
 
             &:active,
-            &:focus {
+            &:focus-visible {
                 background-color: hsl(0deg 0% 0% / 10%);
                 outline: none;
             }
@@ -384,7 +384,7 @@
     margin-bottom: 10px;
     width: 206px;
 
-    &:focus {
+    &:focus-visible {
         border-color: hsl(206deg 80% 62% / 80%);
         outline: 0;
         box-shadow:

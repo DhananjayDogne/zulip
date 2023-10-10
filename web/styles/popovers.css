@@ -70,7 +70,7 @@
 
 .user-card-popover-manage-menu-btn {
     &:hover,
-    &:focus {
+    &:focus-visible {
         text-decoration: none;
     }
 }
@@ -115,7 +115,7 @@
             background-color: transparent !important;
         }
 
-        &:focus {
+        &:focus-visible {
             background-color: transparent !important;
         }
     }
@@ -145,7 +145,7 @@
             }
         }
 
-        &:focus {
+        &:focus:not(:focus-visible)  {
             outline: none;
         }
     }
@@ -847,7 +847,7 @@ ul {
             right: 3px;
             font-size: 16px;
 
-            &:focus {
+            &:focus-visible {
                 .fa-remove {
                     outline: 2px solid var(--color-outline-focus);
                 }
